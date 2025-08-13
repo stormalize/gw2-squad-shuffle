@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="initial-scale=1.0, width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link rel="icon" href="./images/wiki/item/Sandstorm_Meld_Hand.png" />
+		<title>GW2 Squad Shuffle</title>
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>GW2 Squad Shuffle</h1>
+				<output id="comp"></output>
+				<output id="fashion"></output>
+				<button class="btn" id="share-btn">Share Image</button>
+			</header>
+			<div id="intro">
+				<p>
+					This page contains some options for mixing up raids, strikes, or any
+					other activity you're going to run. It also lists some ideas for
+					fashion themes. You may select a team composition and fashion prompt
+					to create an image for advertising your event theme. The in-page
+					preview at the bottom is live content and has a few options for a
+					background. You can generate an image to save or copy by hitting the
+					"Share Image" button.
+				</p>
+			</div>
+			<div class="main-grid">
+				<div class="prose" id="comp-list">
+					<h2>
+						<img
+							src="./images/comm.png"
+							width="40"
+							height="42"
+							class="inline-icon"
+						/>
+						Team Composition
+					</h2>
+					<section class="collection prose">
+						<h3>Standard</h3>
+						<ul class="options">
+							<li>
+								<h4>Normal Run</h4>
+								<p class="flavor">"And once more..."</p>
+								<p>
+									No build restrictions, but a tried-and-true build you are
+									comfortable on is preferred to focus on encounter mechanics.
+								</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Commander's_Compendium.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Build Experimentation</h4>
+								<p class="flavor">
+									The label reads: "Danger." It hums pleasantly.
+								</p>
+								<p>
+									No build restrictions. Practicing or theorycrafting new builds
+									encouraged!
+								</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Peer_Reviewed_Research.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Serious Run</h4>
+								<p class="flavor">
+									"I will reduce your mind to ashes before I'm done."
+								</p>
+								<p>
+									Bring your big pumper build to demolish everything before it
+									has a chance to fight back.
+								</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Writ_of_Masterful_Strength.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+						</ul>
+					</section>
+					<section class="collection prose">
+						<h3>Eras</h3>
+						<ul class="options">
+							<li>
+								<h4>We Noble Few</h4>
+								<p class="flavor">
+									"You seek the heart of Orr? Then you must go to the very
+									beginning."
+								</p>
+								<p>
+									<strong>Core classes</strong> only. No elite specialization
+									allowed!
+								</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/skill/Banner_of_Strength.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Welcome to the Jungle</h4>
+								<p class="flavor">
+									"Everybody form up and do your jobs. It's a long time until
+									daylight."
+								</p>
+								<p>
+									Must use an <strong>elite specializations</strong> from
+									<strong>Heart of Thorns</strong>.
+								</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Mini_Mushroom_Bomber.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Desert Power</h4>
+								<p class="flavor">
+									He took their hope, but now you've returned it.
+								</p>
+								<p>
+									Must use an <strong>elite specializations</strong> from
+									<strong>Path of Fire</strong>.
+								</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Mini_Djinn_Lamp.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Canthan Tempo Style</h4>
+								<p class="flavor">Honor the empress.</p>
+								<p>
+									Must use an <strong>elite specializations</strong> from
+									<strong>End of Dragons</strong>.
+								</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Temple_Gate.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+						</ul>
+					</section>
+					<section class="collection prose">
+						<h3>Weapon Specialist</h3>
+						<ul class="options">
+							<li>
+								<h4>Bonks R Us</h4>
+								<p class="flavor">
+									When you absolutely want to turn your foes into jelly, this is
+									your weapon.
+								</p>
+								<p>
+									Include a <strong>Hammer</strong> as a main component in your
+									build.
+								</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Magmaton.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>One Kodan Tribe</h4>
+								<p class="flavor">Pointy stick hurt.</p>
+								<p>
+									Include a <strong>Spear</strong> as a main component in your
+									build.
+								</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Falling_Star.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Archery Regiment</h4>
+								<p class="flavor">Our arrows will blot out the sun.</p>
+								<p>
+									Include a <strong>Longbow</strong> or
+									<strong>Shortbow</strong> as a main component in your build.
+								</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Restored_Boreal_Longbow.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Student of the Blade</h4>
+								<p class="flavor">*Skillfully teleports behind you*</p>
+								<p>
+									Include <strong>Dual Swords</strong> and/or a
+									<strong>Greatsword</strong> as a main component in your build.
+								</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Lunar_Astrolabe_Sword.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>A Less Elegant Weapon</h4>
+								<p class="flavor">So anyway, I started blasting.</p>
+								<p>
+									Include a <strong>Rifle</strong> and/or
+									<strong>Pistols</strong> as a main component in your build.
+								</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Norn_Rifle.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Axemaster</h4>
+								<p class="flavor">
+									It's not the prettiest weapon in the armory, but it slices
+									beautifully.
+								</p>
+								<p>
+									Include an <strong>Axe</strong> as a main component in your
+									build.
+								</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Gallant_Axe.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Arcane Armory</h4>
+								<p class="flavor">
+									A thousand secrets, and half of them are lethal. It's best not
+									to get lost...
+								</p>
+								<p>
+									Include a <strong>Staff</strong>, <strong>Scepter</strong>,
+									and/or <strong>Focus</strong> as a main component in your
+									build.
+								</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/The_Binding_of_Ipos.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+						</ul>
+					</section>
+					<section class="collection prose">
+						<h3>Armor Weights</h3>
+						<ul class="options">
+							<li>
+								<h4>Order of Scholars</h4>
+								<p class="flavor">
+									Because of this, we feel we must close Ahdashim to the outside
+									world to protect our magic.
+								</p>
+								<p><strong>Light</strong> armor professions only.</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Scriptures_of_Dwayna.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Band of Adventurers</h4>
+								<p class="flavor">
+									They're at our door. Pavel is readying the arrows.
+								</p>
+								<p><strong>Medium</strong> armor professions only.</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Prowler_Boots.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Soldier's Battalion</h4>
+								<p class="flavor">
+									Now the war machines can begin their march toward the city of
+									Arah.
+								</p>
+								<p><strong>Heavy</strong> armor professions only.</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Heavy_Plate_Helm.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+						</ul>
+					</section>
+					<section class="collection prose">
+						<h3>Professions</h3>
+						<ul class="options">
+							<li>
+								<h4>You're a Wizard</h4>
+								<p class="flavor">
+									The power of the elements are some of the greatest powers in
+									Tyria.
+								</p>
+								<p>Must use an <strong>Elementalist</strong>.</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Catalyst's_Cache.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>A Clone of My Own</h4>
+								<p class="flavor">
+									Who's to say we're not all illusions of one person?
+								</p>
+								<p>Must use a <strong>Mesmer</strong>.</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Biography_Harlequin's_Smile.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Fright Night</h4>
+								<p class="flavor">Living life on the very edge.</p>
+								<p>Must use a <strong>Necromancer</strong>.</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Biography_Skull.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Tyrian Scientific Society</h4>
+								<p class="flavor">
+									This is a high priority item, as indicated by this
+									memorandum's paper stock and choice of ink.
+								</p>
+								<p>Must use an <strong>Engineer</strong>.</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Biography_Universal_Multitool_Pack.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Hunting Party</h4>
+								<p class="flavor">
+									"My trophies are the best the Great Hunt has ever seen. Way
+									better than yours."
+								</p>
+								<p>Must use a <strong>Ranger</strong>.</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Maguuma_Longbow.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Heist Crew</h4>
+								<p class="flavor">
+									I only lied about being a thief, I don't do that anymore.
+								</p>
+								<p>Must use a <strong>Thief</strong>.</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Biography_Subterfuge.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Followers of the Holy Fire</h4>
+								<p class="flavor">
+									I'm stalwart in my beliefs and immovable in my loyalties.
+								</p>
+								<p>Must use a <strong>Guardian</strong>.</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Biography_Fanatic's_Pauldrons.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Legend Whisperer</h4>
+								<p class="flavor">"Tribune? I saw you dive into the Mists."</p>
+								<p>Must use a <strong>Revenant</strong>.</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Biography_Mist_Scrim.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Adrenaline Junkie</h4>
+								<p class="flavor">Overkill? I don't believe in overkill!</p>
+								<p>Must use a <strong>Warrior</strong>.</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Biography_Spangenhelm.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+						</ul>
+					</section>
+					<section class="collection prose">
+						<h3>Miscellaneous</h3>
+						<ul class="options">
+							<li>
+								<h4>They Keep Ticking</h4>
+								<p class="flavor">
+									If all you have is a condi build, everything looks like a
+									condi boss.
+								</p>
+								<p><strong>Condition</strong> builds only.</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Flaming_Fire_Flakes.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Guise of the Stars</h4>
+								<p class="flavor">
+									"I have a theory that Ascension may be a precursor to the
+									Eternal Alchemy."
+								</p>
+								<p>Must use <strong>Full Celestial</strong> gear.</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Solaria,_Circle_of_the_Sun.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Oops, All Combos!</h4>
+								<p class="flavor">I march to the boom of war machines.</p>
+								<p>
+									Goal: use as many <strong>Combo</strong> skills as possible.
+								</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/skill/Blast_Gyro.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Heritage</h4>
+								<p class="flavor">
+									"Standing united today shows promise that my father only
+									dreamt of.
+								</p>
+								<p>
+									Bring at least 1 <strong>Racial</strong> utility or elite
+									skill.
+								</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/skill/Battle_Roar.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+							<li>
+								<h4>Blinding Tide</h4>
+								<p class="flavor">Floor? What floor?</p>
+								<p>
+									Bring as many flashy and VFX-heavy skills as possible to blind
+									your team with.
+								</p>
+								<button aria-label="select item"></button>
+								<img
+									src="./images/wiki/item/Crystal_Infusion.png"
+									width="64"
+									height="64"
+									loading="lazy"
+								/>
+							</li>
+						</ul>
+					</section>
+				</div>
+				<div class="prose" id="fashion-list">
+					<h2>
+						<img
+							src="./images/transmutation-charge.png"
+							width="64"
+							height="64"
+							class="inline-icon"
+						/>
+						Fashion Prompts
+					</h2>
+					<ul class="options">
+						<li>Underworld<button aria-label="select item"></button></li>
+						<li>Nature<button aria-label="select item"></button></li>
+						<li>Sizzlin'<button aria-label="select item"></button></li>
+						<li>The Ancient One<button aria-label="select item"></button></li>
+						<li>Caste Society<button aria-label="select item"></button></li>
+						<li>Seasonal<button aria-label="select item"></button></li>
+						<li>Guildpunk<button aria-label="select item"></button></li>
+						<li>Hunter/Gatherer<button aria-label="select item"></button></li>
+						<li>Pantheon<button aria-label="select item"></button></li>
+						<li>
+							Fancy Dinner Party<button aria-label="select item"></button>
+						</li>
+						<li>
+							Research and Development<button aria-label="select item"></button>
+						</li>
+						<li>
+							Pirates vs. Ninjas<button aria-label="select item"></button>
+						</li>
+						<li>
+							Summer Beach Episode<button aria-label="select item"></button>
+						</li>
+						<li>Disco Fever<button aria-label="select item"></button></li>
+						<li>
+							Witches and Wizards<button aria-label="select item"></button>
+						</li>
+						<li>Under Da Sea<button aria-label="select item"></button></li>
+						<li>Fiesta Time<button aria-label="select item"></button></li>
+						<li>Red<button aria-label="select item"></button></li>
+						<li>
+							Anachronistic Attire<button aria-label="select item"></button>
+						</li>
+						<li>Expendable<button aria-label="select item"></button></li>
+						<li>Holiday<button aria-label="select item"></button></li>
+						<li>Cosmic Creations<button aria-label="select item"></button></li>
+						<li>Cosplay<button aria-label="select item"></button></li>
+						<li>New Canthan<button aria-label="select item"></button></li>
+						<li>Musical Moods<button aria-label="select item"></button></li>
+						<li>
+							Dress like a Necromancer<button aria-label="select item"></button>
+						</li>
+						<li>The Midas Touch<button aria-label="select item"></button></li>
+						<li>
+							Purity and Corruption<button aria-label="select item"></button>
+						</li>
+						<li>Rock Band<button aria-label="select item"></button></li>
+						<li>Disaster!<button aria-label="select item"></button></li>
+						<li>On the Run<button aria-label="select item"></button></li>
+						<li>Such a Fright<button aria-label="select item"></button></li>
+						<li>Cute and Cozy<button aria-label="select item"></button></li>
+						<li>Statue Garden<button aria-label="select item"></button></li>
+						<li>Leather<button aria-label="select item"></button></li>
+						<li>Squad Uniform<button aria-label="select item"></button></li>
+						<li>
+							POV: you're going up against Magneto<button
+								aria-label="select item"
+							></button>
+						</li>
+						<li>UwU<button aria-label="select item"></button></li>
+						<li>
+							Embodiment of &lt;my elite spec&gt;<button
+								aria-label="select item"
+							></button>
+						</li>
+						<li>Real Life Jobs<button aria-label="select item"></button></li>
+						<li>
+							Pretend to be a different profession<button
+								aria-label="select item"
+							></button>
+						</li>
+						<li>Vintage<button aria-label="select item"></button></li>
+						<li>National Flags<button aria-label="select item"></button></li>
+						<li>
+							Function over Form<button aria-label="select item"></button>
+						</li>
+						<li>
+							I Think I'm a Clone Now<button aria-label="select item"></button>
+						</li>
+						<li>Cavedweller<button aria-label="select item"></button></li>
+						<li>Formal<button aria-label="select item"></button></li>
+						<li>Rich vs. Poor<button aria-label="select item"></button></li>
+						<li>
+							Definitely Not a Cult<button aria-label="select item"></button>
+						</li>
+						<li>Otherworldly<button aria-label="select item"></button></li>
+						<li>Technology<button aria-label="select item"></button></li>
+						<li>Dashing<button aria-label="select item"></button></li>
+						<li>????<button aria-label="select item"></button></li>
+						<li>Dredge Rave<button aria-label="select item"></button></li>
+						<li>Military<button aria-label="select item"></button></li>
+						<li>Perfection<button aria-label="select item"></button></li>
+						<li>Elemental<button aria-label="select item"></button></li>
+						<li>Spikes & Chains<button aria-label="select item"></button></li>
+						<li>Super 64<button aria-label="select item"></button></li>
+						<li>
+							Prisoners vs. Guards<button aria-label="select item"></button>
+						</li>
+						<li>Beastmode<button aria-label="select item"></button></li>
+						<li>Rare Skins<button aria-label="select item"></button></li>
+						<li>
+							Elonian Traditional<button aria-label="select item"></button>
+						</li>
+						<li>Espionage<button aria-label="select item"></button></li>
+						<li>Masks<button aria-label="select item"></button></li>
+						<li>Nautical<button aria-label="select item"></button></li>
+						<li>
+							Least Protective "Armor"<button aria-label="select item"></button>
+						</li>
+						<li>Workout<button aria-label="select item"></button></li>
+						<li>Pop Culture<button aria-label="select item"></button></li>
+						<li>Pastel<button aria-label="select item"></button></li>
+						<li>
+							Far Northern Isles<button aria-label="select item"></button>
+						</li>
+						<li>Nobility<button aria-label="select item"></button></li>
+						<li>Angles<button aria-label="select item"></button></li>
+						<li>Tribe<button aria-label="select item"></button></li>
+						<li>Industrial<button aria-label="select item"></button></li>
+						<li>Stereotype<button aria-label="select item"></button></li>
+						<li>Minimal<button aria-label="select item"></button></li>
+						<li>
+							Every armor piece from a different set<button
+								aria-label="select item"
+							></button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<aside>
+			<h2>Preview</h2>
+			<label for="bg-image-select">Background Image:</label>
+			<select id="bg-image-select">
+				<optgroup label="Raids">
+					<option value="la-aerodrome.jpg" selected="">
+						Lion's Arch Aerodrome
+					</option>
+					<option value="raid-portal.jpg">Raid Portal</option>
+					<option value="spirit-vale.jpg">HoT W1: Spirit Vale</option>
+					<option value="salvation-pass.png">HoT W2: Salvation Pass</option>
+					<option value="stronghold-of-the-faithful.jpg">
+						HoT W3: Stronghold of the Faithful
+					</option>
+					<option value="bastion-of-the-penitent.jpg">
+						HoT W4: Bastion of the Penitent
+					</option>
+					<option value="hall-of-chains.jpg">PoF W5: Hall of Chains</option>
+					<option value="mythwright-gambit.jpg">
+						PoF W6: Mythwright Gambit
+					</option>
+					<option value="key-of-ahdashim.jpg">
+						PoF W7: The Key of Ahdashim
+					</option>
+					<option value="mount-balrior.png">JW W8: Mount Balrior</option>
+				</optgroup>
+				<optgroup label="Strikes">
+					<option value="sanctum.jpg">IBS: Sanctum</option>
+					<option value="voice-in-the-deep.jpg">IBS: Voice in the Deep</option>
+					<option value="battle-for-la.png">Old Lion's Court</option>
+					<option value="aetherblade-hideout.png">
+						EoD: Aetherblade Hideout
+					</option>
+					<option value="xunlai-jade.png">EoD: Xunlai Jade Junkyard</option>
+					<option value="minsec-hq.png">EoD: Kaineng Overlook</option>
+					<option value="harvest-temple.png">EoD: Harvest Temple</option>
+					<option value="cosmic-observatory.png">
+						SotO: Cosmic Observatory
+					</option>
+					<option value="temple-of-febe.png">SotO: Temple of Febe</option>
+				</optgroup>
+			</select>
+			<button class="btn" id="share-btn-bottom">Share Image</button>
+			<div id="share-preview">
+				<img
+					id="share-preview-img"
+					src="./images/wiki/screen/la-aerodrome.jpg"
+				/>
+				<div id="share-preview-comp"></div>
+				<div id="share-preview-fashion"></div>
+			</div>
+		</aside>
+		<dialog id="share-window">
+			<p>Save and share image:</p>
+			<div id="share-img-container"></div>
+			<button id="share-close">Close</button>
+		</dialog>
+		<script type="module">
+			import { toPng } from "./html-to-image@1.11.11.min.js";
+			const shareBtn = document.getElementById("share-btn");
+			const shareBtnBottom = document.getElementById("share-btn-bottom");
+			const outputComp = document.getElementById("comp");
+			const outputFashion = document.getElementById("fashion");
+			const dialog = document.getElementById("share-window");
+			const shareImgContainer = document.getElementById("share-img-container");
+			const sharePreviewComp = document.getElementById("share-preview-comp");
+			const sharePreviewImg = document.getElementById("share-preview-img");
+			const sharePreviewFashion = document.getElementById(
+				"share-preview-fashion"
+			);
+			const sharePreview = document.getElementById("share-preview");
+			const shareClose = document.getElementById("share-close");
+			const bgImageSelect = document.getElementById("bg-image-select");
+
+			function updateShareImage() {
+				toPng(sharePreview, { width: 600, height: 600 })
+					.then((dataUrl) => {
+						const img = new Image();
+						img.src = dataUrl;
+						shareImgContainer.textContent = "";
+						shareImgContainer.appendChild(img);
+					})
+					.catch((err) => {
+						console.error("oops, something went wrong!", err);
+					});
+			}
+
+			document.addEventListener("click", (event) => {
+				if (event.target.matches(".options > li > button")) {
+					const item = event.target.closest("li");
+					if (item) {
+						if (item.closest("#comp-list")) {
+							const title = item.querySelector("h1,h2,h3,h4,h5");
+							if (title?.innerText) {
+								outputComp.value = title.innerText;
+								sharePreviewComp.textContent = "";
+								const children = item.childNodes;
+								Array.from(children).forEach(function (child) {
+									if (child.tagName !== "BUTTON") {
+										var cln = child.cloneNode(true);
+										sharePreviewComp.appendChild(cln);
+									}
+								});
+							}
+						} else if (item.closest("#fashion-list")) {
+							outputFashion.value = item.innerText;
+							sharePreviewFashion.textContent = "";
+							const children = item.childNodes;
+							Array.from(children).forEach(function (child) {
+								if (child.tagName !== "BUTTON") {
+									var cln = child.cloneNode(true);
+									sharePreviewFashion.appendChild(cln);
+								}
+							});
+						}
+
+						updateShareImage();
+					}
+				}
+			});
+
+			bgImageSelect.addEventListener("change", (event) => {
+				sharePreviewImg.src = `./images/wiki/screen/${event.target.value}`;
+				updateShareImage();
+			});
+			shareBtnBottom.addEventListener("click", () => {
+				dialog.showModal();
+			});
+			shareBtn.addEventListener("click", () => {
+				dialog.showModal();
+			});
+			shareClose.addEventListener("click", () => {
+				dialog.close();
+			});
+		</script>
+	</body>
+</html>
